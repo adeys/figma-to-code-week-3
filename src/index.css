@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  :root {
+
+    /* Main colors */
+    --primary: 202 87% 54%;
+    --primary-hover: 209 65% 47%;
+    --primary-faded: 202 100% 85%;
+
+    /* Text colors */
+    --text: 228 28% 20%;
+    --second-text: 0 0% 45%;
+    --light-text: 0 0% 100%;
+    --danger-text: 0 77% 58%;
+
+    /* Backgrounds */
+    --light-background: 0 0% 100%;
+    --light-background-gray: 0 0% 98%;
+    --light-background-gray-2: 0 0% 97%;
+    --dark-background: 228 28% 20%;
+
+    /* Others colors */
+    --success: 148 62% 47%;
+    --muted: 0 0% 74%;
+  }
+}
+
+
+@layer base {
+  body {
+    @apply bg-background text-background-foreground;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+  }
+}
