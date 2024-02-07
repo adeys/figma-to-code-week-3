@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -55,17 +54,3 @@ const config: Config = {
 };
 
 export default config;
-=======
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    './index.html',
-    './src/**/*.{js,jsx,ts,tsx}',
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
->>>>>>> c4daad9ac911455f4f96a8ef22a332a7c03cebb4
