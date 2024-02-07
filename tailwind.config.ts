@@ -1,8 +1,11 @@
-<<<<<<< HEAD
-import type { Config } from "tailwindcss";
+import type {Config} from "tailwindcss";
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 const config: Config = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}"
+  ],
   theme: {
     container: {
       center: true,
@@ -49,23 +52,12 @@ const config: Config = {
         muted: "hsl(var(--muted))",
         success: "hsl(var(--success))",
       },
+      fontFamily: {
+        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+      },
     },
   },
   plugins: [],
 };
 
 export default config;
-=======
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    './index.html',
-    './src/**/*.{js,jsx,ts,tsx}',
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-
->>>>>>> c4daad9ac911455f4f96a8ef22a332a7c03cebb4
