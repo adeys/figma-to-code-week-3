@@ -1,7 +1,11 @@
-import type { Config } from "tailwindcss";
+import type {Config} from "tailwindcss";
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 const config: Config = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}"
+  ],
   theme: {
     container: {
       center: true,
@@ -47,6 +51,9 @@ const config: Config = {
         },
         muted: "hsl(var(--muted))",
         success: "hsl(var(--success))",
+      },
+      fontFamily: {
+        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
       },
     },
   },

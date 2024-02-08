@@ -25,21 +25,12 @@ export default function Header() {
               </li>
             </ul>
             <div className="flex gap-10 items-center">
-              <Link
-                to="/"
-                className="font-bold text-sm text-primary hover:text-primary-hover"
-              >
+              <Link to="/" className="font-bold text-sm text-primary hover:text-primary-hover">
                 Login
               </Link>
               <Button>
                 <span>Become a member</span>
-                <svg
-                  width="12"
-                  height="10"
-                  viewBox="0 0 12 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_2865_4110)">
                     <path
                       fill-rule="evenodd"
@@ -58,13 +49,7 @@ export default function Header() {
             </div>
           </div>
           <div className="flex gap-6 items-end lg:hidden">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_2865_4133)">
                 <path
                   fill-rule="evenodd"
@@ -79,13 +64,7 @@ export default function Header() {
                 </clipPath>
               </defs>
             </svg>
-            <svg
-              width="24"
-              height="23"
-              viewBox="0 0 24 23"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_2865_4135)">
                 <path
                   d="M7.9999 22.4002C8.88356 22.4002 9.5999 21.6838 9.5999 20.8002C9.5999 19.9165 8.88356 19.2002 7.9999 19.2002C7.11625 19.2002 6.3999 19.9165 6.3999 20.8002C6.3999 21.6838 7.11625 22.4002 7.9999 22.4002Z"
