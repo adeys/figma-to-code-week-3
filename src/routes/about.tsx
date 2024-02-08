@@ -1,8 +1,13 @@
+import { Hero } from "../components/sections/about/hero";
+import { Problems } from "../components/sections/about/problems";
+import { Stats } from "../components/sections/about/stats";
+
 export default function About() {
-    return (
-        <div className="text-center">
-            <h1 className="text-2xl font-semibold">About</h1>
-            <p>Learn more about us!</p>
-        </div>
-    );
+  return (
+    <main>
+      <Hero />
+      <Problems />
+      <Stats />
+    </main>
+  );
 }
