@@ -1,7 +1,7 @@
 import {ComponentPropsWithoutRef} from "react";
 
 export default function Button(props: ComponentPropsWithoutRef<'a'> & ComponentPropsWithoutRef<'button'>) {
-  const Comp = props.href === undefined ? 'a' : 'button'
+  const Comp = props.href !== undefined ? 'a' : 'button'
 
   return (
     <Comp

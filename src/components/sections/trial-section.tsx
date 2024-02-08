@@ -1,5 +1,5 @@
 import PageSection from "./page-section.tsx";
-import Button from "../ui/button.tsx";
+import Button from "../button.tsx";
 import {InstagramIcon, TwitterIcon} from "../icons.tsx";
 
 import facebookLogoUrl from '../../assets/images/logos/facebook.svg'

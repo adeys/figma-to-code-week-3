@@ -1,11 +1,12 @@
 import {Link} from "react-router-dom";
-import Button from "./ui/button.tsx";
+import Button from "./button.tsx";
+import Logo from "./logo.tsx";
 
 export default function Header() {
   return (
     <header>
       <nav className="max-w-screen-xl mx-auto py-3 px-4 flex gap-24 items-center">
-        <a href="#" className="font-bold text-2xl">Bandage</a>
+        <Logo/>
 
         <div className="hidden lg:grow lg:flex items-center justify-between">
           <ul className="flex gap-3">
