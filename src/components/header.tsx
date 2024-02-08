@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import Logo from "./logo";
 
 export default function Header() {
   const [isOpen, setisOpen] = useState(false);
@@ -8,17 +9,19 @@ export default function Header() {
     <header className="bg-[#F6F6F6] lg:bg-background lg:h-[91px] lg:flex items-center">
       <nav className="container py-6 px-12">
         <div className="flex items-center justify-between">
-          <h1 className="text-2xl font-bold w-[187px]">Bandage</h1>
+          <h1 className="text-2xl font-bold w-[187px]">
+            <Logo />
+          </h1>
           <div className="lg:flex hidden w-[calc(100%-187px)] items-center justify-between">
             <ul className="flex pl-6 gap-5 items-center text-sm font-bold text-text-second">
               <li>
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/product">Product</Link>
+                <Link to="/pricing">Pricing</Link>
               </li>
               <li>
-                <Link to="/pricing">Pricing</Link>
+                <Link to="/team">Team</Link>
               </li>
               <li>
                 <Link to="/contact">Contact</Link>
@@ -107,10 +110,10 @@ export default function Header() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/product">Product</Link>
+              <Link to="/pricing">Pricing</Link>
             </li>
             <li>
-              <Link to="/pricing">Pricing</Link>
+              <Link to="/team">Team</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>
