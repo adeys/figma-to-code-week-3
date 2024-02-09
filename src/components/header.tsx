@@ -4,14 +4,12 @@ import {useState} from "react";
 import Logo from "./logo";
 
 export default function Header() {
-  const [isOpen, setisOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="bg-[#F6F6F6] lg:bg-background lg:h-[91px] lg:flex items-center">
-      <nav className="container py-6 px-12">
+      <nav className="container py-6 px-6 lg:px-12">
         <div className="flex items-center justify-between">
-          <h1 className="text-2xl font-bold w-[187px]">
-            <Logo />
-          </h1>
+          <Logo/>
           <div className="lg:flex hidden w-[calc(100%-187px)] items-center justify-between">
             <ul className="flex pl-6 gap-5 items-center text-sm font-bold text-text-second">
               <li>
@@ -95,7 +93,7 @@ export default function Header() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="cursor-pointer"
-              onClick={() => setisOpen(!isOpen)}
+              onClick={() => setIsOpen(!isOpen)}
             >
               <path
                 d="M0.571533 0H23.4287V2.28571H0.571533V0ZM6.28582 5.71429H23.4287V8H6.28582V5.71429ZM13.4287 11.4286H23.4287V13.7143H13.4287V11.4286Z"

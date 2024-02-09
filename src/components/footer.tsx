@@ -1,7 +1,7 @@
 import Logo from "./logo.tsx";
 import {FacebookIcon, InstagramIcon, TwitterIcon} from "./icons.tsx";
 import {ComponentPropsWithoutRef} from "react";
-import Button from "./button.tsx";
+import Button from "./ui/button.tsx";
 
 const footerNav = [
   {
