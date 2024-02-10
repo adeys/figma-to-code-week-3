@@ -1,7 +1,7 @@
 import Logo from "./logo.tsx";
 import {FacebookIcon, InstagramIcon, TwitterIcon} from "./icons.tsx";
 import {ComponentPropsWithoutRef} from "react";
-import Button from "./ui/button.tsx";
+import {Button} from "./ui/button.tsx";
 
 const footerNav = [
   {
@@ -79,7 +79,7 @@ export default function Footer() {
             />
           ))}
 
-          <NavSection title="Get In Touch">
+          <NavSection title="Get In Touch" className="w-full lg:w-auto">
             <form action="#" method="post">
               <div>
                 <label htmlFor="email" className="sr-only">Email</label>
@@ -89,7 +89,7 @@ export default function Footer() {
                     id="email"
                     name="email"
                     placeholder="Your Email"
-                    className="shrink p-6 bg-background-light-gray-2 text-background-foreground font-semibold border border-gray-300 rounded-md rounded-r-none transition-colors "
+                    className="w-full p-6 bg-background-light-gray-2 text-background-foreground font-semibold border border-gray-300 rounded-md rounded-r-none transition-colors"
                     required
                   />
 
